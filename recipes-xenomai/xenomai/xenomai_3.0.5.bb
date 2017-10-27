@@ -16,6 +16,9 @@ includedir = "/usr/include/xenomai"
 
 SRC_URI[md5sum] = "c309036358fd403e9894fbbf53be91a1"
 
+EXTRA_OECONF += "--enable-smp \
+                --with-core=cobalt"
+
 #Fixes QA Issues: non debug package contains .debug directory
 FILES_${PN}-dbg += "/usr/bin/regression/posix/.debug"
 FILES_${PN}-dbg += "/usr/bin/regression/native/.debug"
