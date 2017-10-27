@@ -1,4 +1,4 @@
-DESCRIPTION = "Linux RPi 3 kernel test"
+DESCRIPTION = "Linux/Xenomai kernel for Pi 3"
 SECTION = "kernel"
 LICENCE = "GPLv2"
 
