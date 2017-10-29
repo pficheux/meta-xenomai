@@ -51,7 +51,7 @@ other layers needed. e.g.:
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
     /path/to/yocto/meta-raspberrypi \
-    /path/to/yocto/meta-meta-xenomai \
+    /path/to/yocto/meta-xenomai \
     "
 
 
