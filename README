@@ -16,9 +16,9 @@ This layer depends on:
   layers: meta
   branch: master
 
-  URI: git://git.yoctoproject.org/xxxx
-  layers: xxxx
-  branch: master
+  URI: git://git.yoctoproject.org/meta-raspberrypi
+  layers: meta-raspberrypi
+  branch: morty
 
 
 Patches
@@ -50,6 +50,7 @@ other layers needed. e.g.:
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-raspberrypi \
     /path/to/yocto/meta-meta-xenomai \
     "
 
