@@ -1,5 +1,6 @@
 This README file contains information on the contents of the
-meta-xenomai layer.
+meta-xenomai layer. Current version supports Raspberry Pi 3
+("raspberrypi3" target from meta-raspberrypi).
 
 Please see the corresponding sections below for details.
 
@@ -58,7 +59,7 @@ other layers needed. e.g.:
 II. Misc
 ========
 
-The "enable_uart = 1"  option should NOT be used with Xenomai and Pi 3. 
+The "ENABLE_UART = 1"  option should *NOT* be used with Xenomai and Pi 3. 
 
 Please add the following lines to your conf/local.conf :
 
