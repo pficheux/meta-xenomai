@@ -26,10 +26,10 @@ FILES_${PN}-dbg += "/usr/bin/regression/native+posix/.debug"
 FILES_${PN}-dbg += "/usr/demo/.debug/*"
 
 # Fixes QA Error - Non -dev package contains symlink .so
-FILES_${PN}-dev += "/usr/lib/*.se"
+FILES_${PN}-dev += "/usr/lib/*.so"
 
 #Add directories to package for shipping
-FILES_${PN} += "/dev/*"
+FILES_${PN} += "/dev"
 FILES_${PN} += "/usr/bin/*"
 FILES_${PN} += "/usr/lib/*"
 FILES_${PN} += "/usr/sbin/*"
