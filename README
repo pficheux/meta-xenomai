@@ -1,6 +1,7 @@
-This README file contains information on the contents of the
-meta-xenomai layer. Current version supports Raspberry Pi 3
-("raspberrypi3" target from meta-raspberrypi).
+This README file contains information on the contents of themeta-xenomai layer.
+
+Current version supports Raspberry Pi 3 ("raspberrypi3" target from meta-raspberrypi) tested
+on Morty (2.2), Pyro (2.3), Rocko (2.4).
 
 Please see the corresponding sections below for details.
 
@@ -10,17 +11,21 @@ Dependencies
 
 This layer depends on:
 
-  URI: git://git.openembedded.org/bitbake
-  branch: master
+## Dependencies
 
-  URI: git://git.openembedded.org/openembedded-core
+This layer depends on:
+
+* URI: git://git.yoctoproject.org/poky
+  * branch: master
+  * revision: HEAD
+
+* URI: git://git.openembedded.org/openembedded-core
   layers: meta
   branch: master
 
-  URI: git://git.yoctoproject.org/meta-raspberrypi
+*  URI: git://git.yoctoproject.org/meta-raspberrypi
   layers: meta-raspberrypi
-  branch: morty
-
+  branch: master
 
 Patches
 =======
@@ -48,10 +53,7 @@ location of the meta-xenomai layer to bblayers.conf, along with any
 other layers needed. e.g.:
 
   BBLAYERS ?= " \
-    /path/to/yocto/meta \
-    /path/to/yocto/meta-poky \
-    /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-raspberrypi \
+    ...
     /path/to/yocto/meta-xenomai \
     "
 
