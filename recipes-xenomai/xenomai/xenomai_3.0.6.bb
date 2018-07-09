@@ -1,5 +1,5 @@
 DESCRIPTION = "Provides userspace xenomai support and libraries needed to for \
-real-time applications using the xenomai RTOS implementation (3.0.5)"
+real-time applications using the xenomai RTOS implementation (3.0.6)"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://include/COPYING;md5=79ed705ccb9481bf9e7026b99f4e2b0e"
 SECTION = "xenomai"
