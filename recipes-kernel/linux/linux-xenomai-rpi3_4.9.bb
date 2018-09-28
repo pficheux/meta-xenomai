@@ -1,7 +1,7 @@
 DESCRIPTION = "Linux/Xenomai kernel for Pi 3"
 
 IPIPE_PATCH = "ipipe-core-4.9.45-arm-custom.patch"
-XENOMAI_SRC = "xenomai-3.0.5"
+XENOMAI_SRC = "xenomai-3.0.7"
 
 include recipes-kernel/linux/linux-xenomai.inc
 

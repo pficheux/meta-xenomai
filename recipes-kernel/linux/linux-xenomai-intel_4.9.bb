@@ -1,6 +1,6 @@
 DESCRIPTION = "Linux/Xenomai kernel for Intel"
 
-XENOMAI_SRC = "xenomai-3.0.6"
+XENOMAI_SRC = "xenomai-3.0.7"
 IPIPE_PATCH = "ipipe-core-4.9.90-x86-6.patch"
 
 LINUX_VERSION ?= "4.9.90"
