@@ -1,7 +1,7 @@
 
-PACKAGE_INSTALL_append = " kernel-modules"
+PACKAGE_INSTALL:append = " kernel-modules"
 
-ROOTFS_POSTPROCESS_COMMAND_append = " clobber_unused;"
+ROOTFS_POSTPROCESS_COMMAND:append = " clobber_unused;"
 
 clobber_unused () {
         rm ${IMAGE_ROOTFS}/boot/*
