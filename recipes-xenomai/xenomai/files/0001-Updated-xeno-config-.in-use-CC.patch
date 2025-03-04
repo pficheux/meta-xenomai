@@ -1,0 +1,39 @@
+From ec079bf6090b9cf9a06723caef574d571d1dcb50 Mon Sep 17 00:00:00 2001
+From: Pierre Ficheux <pierre.ficheux@smile.fr>
+Date: Sat, 31 Aug 2019 14:31:20 +0200
+Subject: [PATCH] Updated xeno-config-*.in (use ${CC})
+
+---
+ scripts/xeno-config-cobalt.in  | 2 +-
+ scripts/xeno-config-mercury.in | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/scripts/xeno-config-cobalt.in b/scripts/xeno-config-cobalt.in
+index ae313d389..1c73967ef 100644
+--- a/scripts/xeno-config-cobalt.in
++++ b/scripts/xeno-config-cobalt.in
+@@ -11,7 +11,7 @@ includedir="@includedir@"
+ 
+ XENO_VERSION="@PACKAGE_VERSION@"
+ XENO_PREFIX="${staging}${prefix}"
+-XENO_CC="@CC@"
++XENO_CC=${CC}
+ XENO_TARGET_ARCH="@XENO_TARGET_ARCH@"
+ XENO_INCLUDE_DIR="${staging}${includedir}"
+ XENO_BASE_CFLAGS="-I$XENO_INCLUDE_DIR/cobalt -I$XENO_INCLUDE_DIR @XENO_USER_APP_CFLAGS@ -D__COBALT__"
+diff --git a/scripts/xeno-config-mercury.in b/scripts/xeno-config-mercury.in
+index 2d2842f30..a2ea03053 100644
+--- a/scripts/xeno-config-mercury.in
++++ b/scripts/xeno-config-mercury.in
+@@ -11,7 +11,7 @@ includedir="@includedir@"
+ 
+ XENO_VERSION="@PACKAGE_VERSION@"
+ XENO_PREFIX="${staging}${prefix}"
+-XENO_CC="@CC@"
++XENO_CC=${CC}
+ XENO_TARGET_ARCH="@XENO_BUILD_STRING@"
+ XENO_INCLUDE_DIR="${staging}${includedir}"
+ XENO_BASE_CFLAGS="-I$XENO_INCLUDE_DIR/mercury -I$XENO_INCLUDE_DIR @XENO_USER_APP_CFLAGS@ -D__MERCURY__"
+-- 
+2.17.1
+
