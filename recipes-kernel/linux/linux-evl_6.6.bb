@@ -23,6 +23,7 @@ PV = "${LINUX_VERSION}+git${SRCPV}"
 KMETA = "kernel-meta"
 KCONF_BSP_AUDIT_LEVEL = "1"
 
+# I don't think this line is necessary for zynqmp !
 KERNEL_DEVICETREE:qemuarmv5 = "versatile-pb.dtb"
 
 COMPATIBLE_MACHINE = "^(zynqmp)$"
