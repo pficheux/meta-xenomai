@@ -1,0 +1,55 @@
+# Local configuration
+MACHINE = "raspberrypi3"
+
+ENABLE_UART = "1"
+INHERIT += "rm_work"
+IMAGE_ROOTFS_EXTRA_SPACE = "10000"
+EXTRA_IMAGE_FEATURES += "package-management ssh-server-dropbear debug-tweaks"
+PACKAGE_CLASSES = "package_ipk"
+
+# use Xenomai  (meta-xenomai)
+PREFERRED_PROVIDER_virtual/kernel = "linux-xenomai-rpi3"
+
+# Use ttyAMA0 in /etc/inittab
+SERIAL_CONSOLES = "115200;ttyAMA0"
+
+# Add mainline DT
+KERNEL_DEVICETREE_append = " bcm2837-rpi-3-b.dtb"
+
+# Remove raspberrypi.org DT
+KERNEL_DEVICETREE_remove = " bcm2708-rpi-zero-w.dtb"
+KERNEL_DEVICETREE_remove += " bcm2711-rpi-4-b.dtb"
+KERNEL_DEVICETREE_remove += " bcm2708-rpi-b.dtb"
+KERNEL_DEVICETREE_remove += " bcm2708-rpi-b-plus.dtb"
+KERNEL_DEVICETREE_remove += " bcm2709-rpi-2-b.dtb"
+KERNEL_DEVICETREE_remove += " bcm2710-rpi-3-b.dtb"
+KERNEL_DEVICETREE_remove += " bcm2710-rpi-3-b-plus.dtb"
+KERNEL_DEVICETREE_remove += " bcm2708-rpi-cm.dtb"
+KERNEL_DEVICETREE_remove += " bcm2710-rpi-cm3.dtb"
+KERNEL_DEVICETREE_remove += "overlays/at86rf233.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/disable-bt.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/dwc2.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/gpio-key.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/hifiberry-amp.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/hifiberry-dac.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/hifiberry-dacplus.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/hifiberry-digi.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/i2c-rtc.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/iqaudio-dac.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/iqaudio-dacplus.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/miniuart-bt.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/mcp2515-can0.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/mcp2515-can1.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/pitft22.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/pitft28-resistive.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/pitft28-capacitive.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/pitft35-resistive.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/pps-gpio.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/rpi-ft5406.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/rpi-poe.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/vc4-kms-v3d.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/vc4-fkms-v3d.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/w1-gpio-pullup.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/w1-gpio.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/gpio-ir.dtbo"
+KERNEL_DEVICETREE_remove += "overlays/gpio-ir-tx.dtbo"
