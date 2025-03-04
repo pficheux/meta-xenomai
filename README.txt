@@ -1,5 +1,5 @@
 You can find the Xenomai layer in the following branches:
 
-beaglebone
-rpi3
-zcu102
+beaglebone Xenomai 3 Dovetail
+rpi3	   Xenomai 3, 32 bits with the old fashioned I-pipe patch !
+zcu102	   Xenomai 4
