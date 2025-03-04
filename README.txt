@@ -1,8 +1,5 @@
-Files to be added at the end of local.conf
-==========================================
+As Xenomai needs a mainline kernel, you must add the content of local.conf.add
+to conf/local.conf
 
-$ cat <file> >> conf/local.conf
+$ cat conf_files/local.conf.add >> conf/local.conf
 
-local.conf.std		Standard kernel
-local.conf.rt		PREEMPT_RT
-local.conf.xenomai	Xenomai
